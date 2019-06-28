@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="331292200621-uli0iqk91jm9640tiphl2ookr6bero6l.apps.googleusercontent.com">
+  <title>Piskel Clone</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html"><h1>Piskel Clone</h1></a>
+    <div class="g-signin2" data-onsuccess="onSignIn">Sign in</div>
+    <div class="user-block">
+      <img src="" alt="" class="user_pic">
+      <span class="user_email"></span>
+      <div class="signout">Sign out</div>
+    </div>
+  </header>
+  <main>
+    <div class="tools">
+      <ul class="tools-list">
+        <li class="tools-item  pen  active-tool" name="pen"><span class="popup">Pen tool<b>(P)</b></span></li>
+        <li class="tools-item  bucket" name="bucket"><span class="popup">Paint bucket tool<b>(B)</b></span></li>
+        <li class="tools-item  paint-same" name="paint-same"><span class="popup">Paint same pixels<b>(A)</b></span></li>
+        <li class="tools-item  eraser" name="eraser"><span class="popup">Eraser tool<b>(E)</b></span></span></li>
+        <li class="tools-item  line" name="line"><span class="popup">Line tool<b>(L)</b></span></span></li>
+        <li class="tools-item  circle" name="circle"><span class="popup">Circle tool<b>(C)</b></span></li>
+        <li class="tools-item  rect" name="rect"><span class="popup">Rectangle tool<b>(R)</b></span></span></li>
+        <li class="tools-item  triangle" name="triangle"><span class="popup">Triangle tool<b>(T)</b></span></li>
+        <li class="tools-item  rhombus" name="rhombus"><span class="popup">Rhombus tool<b>(O)</b></span></li></b>
+        <li class="tools-item  semicircle-top " name="semicircle-top"><span class="popup">Semicircle tool<b>(S)</b></span></li>
+        <li class="tools-item  semicircle-bottom " name="semicircle-bottom"><span class="popup">Semicircle tool<b>(J)</b></span></li>
+        <li class="tools-item  dithering" name="dithering"><span class="popup">Dithering tool<b>(Z)</b></span></span></li>
+        <li class="tools-item  darken" name="darken"><span class="popup">Darken tool<b>(D)</b></span></span></li>
+        <li class="tools-item  lighten" name="lighten"><span class="popup">Lighten tool<b>(N)</b></span></span></li>
+        <li class="tools-item  picker" name="picker"><span class="popup">Color picker tool<b>(X)</b></span></li>
+        <li class="tools-colors">
+          <input type="color" class="choose-color choose-color1" id="choose-color1">
+          <label for="choose-color1" class="color-label color-label1" value="#000000" title="Primary color"></label>
+          <input type="color" class="choose-color choose-color2" id="choose-color2">
+          <label for="choose-color2" class="color-label color-label2" value="#ffffff" title="Secondary color"></label>
+          <img src="src/tools/images/swap.png" alt="Swap colors" class="swap-colors">
+          <span class="popup  swap-colors-popup">Swap colors tool<b>(W)</b></span>
+        </li>
+      </ul>
+    </div>
+    <div class="frames-wrapper">
+      <div class="frames-list">
+        <div class="add">
+          <img class="plus" src="src/frames/images/plus.png" alt="">
+          Add new <br> frame
+        </div>
+      </div>
+    </div>
+    <div class="canvas-wrapper">
+      <canvas id="canvas" class="canvas"></canvas>
+    </div>
+    <div class="preview">
+      <img src="src/preview/images/fullscreen.png" alt="Open in Full Screen" class="full-screen-img">
+      <canvas id="canvas2" class="canvas2"></canvas>
+      <div class="fps-slider-wrapper">
+        <span class="fps">10 FPS</span>
+        <input type="range" min="1" max="24" value="10" class="fps-slider">
+      </div>
+      <div class="canvas-coordinates">
+        <span class="canvas-size">[32x32]</span>
+        <div class="coordinates"></div>
+      </div>
+      <button class="download-gif">Download GIF</button>
+      <img src="src/assets/images/bg2.png" alt="" class="bg" width="32" height="32">
+    </div>
+  </main>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script type="text/javascript" src="src/preview/gif/LZWEncoder.js"></script>
+  <script type="text/javascript" src="src/preview/gif/NeuQuant.js"></script>
+  <script type="text/javascript" src="src/preview/gif/GIFEncoder.js"></script>
+  <script type="text/javascript" src="src/preview/gif/b64.js"></script>
+  <script src="app.bundle.js"></script>
+</body>
+</html>
