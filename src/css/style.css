@@ -1,0 +1,268 @@
+@import url("../frames/frames.css");
+@import url("../preview/preview.css");
+@import url("../tools/tools.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #1d1d1d;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin-left: 25px;
+  font-size: 18px;
+  color: rgb(233, 230, 230);
+  font-family: 'Press Start 2P', cursive;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  background-color: #2d2d2d;
+}
+
+.main-header {
+  min-height: 50px;
+}
+
+.signout {
+  display: inline-block;
+  width: 70px;
+  margin-left: 10px;
+  background-color: #ffd700;
+  color: #000;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.user-block {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 310px;
+  height: 40px;
+  padding: 5px;
+  font-size: 13px;
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.user_pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+div.abcRioButtonLightBlue {
+  background-color: rgb(225, 224, 224);
+  color: #000;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+span[id^=not_signed_]:before {
+  content: 'Sign in';
+  padding-right: 50px;
+  padding-left: 3px;
+  font-size: 15px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.landing-page {
+  flex-wrap: wrap;
+  min-width: 1200px;
+  color: #fff;
+}
+
+.description {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  text-align: left;
+}
+
+.description_info {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 40%;
+  padding: 50px;
+  padding-right: 40px;
+}
+
+.description_screenshot {
+  padding-top: 50px;
+  padding-right: 10px;
+  width: 60%;
+}
+
+.description_image {
+  max-width: 100%;
+}
+
+.description_original {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.description_original a {
+  color: yellow;
+}
+
+.description_clone {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.description_arrow {
+  width: 64px;
+  height: 64px;
+  margin: 0 40px 0 auto;
+}
+
+.description_new-sprite {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  background: rgb(246,194,2);
+  background: linear-gradient(61deg, rgba(246,194,2,1) 0%, rgba(245,240,175,1) 100%);
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.description_new-sprite:hover {
+  transform: scale(1.05);
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.examples_title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.example1,
+.example2 {
+  width: 320px;
+  height: 320px;
+  margin-right: 50px;
+}
+
+.example2 {
+  margin-right: 0;
+  margin-left: 50px;
+}
+
+.tools-description {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  min-height: 700px;
+}
+
+.available-tools,
+.available-functionality {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.available-tools_list,
+.available-functionality_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1300px;
+  margin: 0 auto;
+  text-align-last: center;
+}
+
+.available-functionality_list {
+  width: 1000px;
+}
+
+.available-tools_item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+.available-tools_item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+}
+
+.available-functionality {
+  margin-top: 20px;
+}
+
+.available-functionality_item {
+  margin-right: 55px;
+}
+
+.main-footer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-width: 1200px;
+  min-height: 50px;
+  color: #fff;
+  padding-right: 30px;
+  background-color: #2d2d2d;
+}
+
+.github-img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
